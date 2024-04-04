@@ -1,0 +1,23 @@
+<div class="login-container">
+    <div class="background-image"></div>
+    <div class="login-form">
+      <ul class="tabs">
+        <li class="tab" [class.active]="activeTab === 'employee'">
+          <button (click)="switchTab('employee')">Login as Employee</button>
+        </li>
+        <li class="tab" [class.active]="activeTab === 'employer'">
+          <button (click)="switchTab('employer')">Login as Employer</button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div *ngIf="activeTab === 'employee'">
+          <!-- Employee Login Form -->
+        </div>
+        <div *ngIf="activeTab === 'employer'">
+          <!-- Employer Login Form -->
+        </div>
+      </div>
+      <button class="signup-button" (click)="navigateToSignup()">Sign Up</button>
+    </div>
+  </div>
+  

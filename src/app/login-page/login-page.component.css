@@ -1,0 +1,54 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .background-image {
+    width: 75%;
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+  }
+  
+  .login-form {
+    width: 25%;
+    padding: 20px;
+  }
+  
+  .tabs {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tab {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .tab button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+  }
+  
+  .signup-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  

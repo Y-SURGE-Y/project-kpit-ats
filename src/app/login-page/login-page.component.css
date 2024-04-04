@@ -5,7 +5,7 @@
   
   .background-image {
     width: 75%;
-    background-image: url('path/to/your/image.jpg');
+    background-image: url("D:\\Personal\\ats-1\\project-kpit-ats\\src\\web-page-NewsroomiResources-KPIT-Aug20-03.jpg");
     background-size: cover;
   }
   
@@ -40,6 +40,15 @@
   }
   
   .signup-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .login-button{
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #007bff;

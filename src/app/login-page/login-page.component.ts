@@ -22,4 +22,14 @@ export class LoginPageComponent {
       this.router.navigateByUrl('/employer-signup');
     }
   }
+  login() {
+    // Determine the home page route based on the user type (employee or employer)
+    let homePageRoute = '/'; // Default home page route
+    if (this.activeTab === 'employee') {
+      homePageRoute = '/employee-home'; // Route for employee home page
+    } else if (this.activeTab === 'employer') {
+      homePageRoute = '/employer-home'; // Route for employer home page
+    }
+    this.router.navigateByUrl(homePageRoute);
+  }
 }

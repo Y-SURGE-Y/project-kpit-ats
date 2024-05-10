@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class LoginPageComponent {
   activeTab: string = 'employee';
+  employeeEmail: string = ''; // Employee email
+  employeePassword: string = ''; // Employee password
 
   constructor(private router: Router) {}
 
@@ -31,5 +33,13 @@ export class LoginPageComponent {
       homePageRoute = '/employer-home'; // Route for employer home page
     }
     this.router.navigateByUrl(homePageRoute);
+  }
+
+  navigateToLogin(option: string) {
+    if (option === 'employee') {
+      this.router.navigateByUrl('/login/employee');
+    } else if (option === 'employer') {
+      this.router.navigateByUrl('/login/employer');
+    }
   }
 }

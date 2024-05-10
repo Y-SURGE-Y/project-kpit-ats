@@ -7,6 +7,7 @@ import { EmployeeSignupComponent } from './employee-signup/employee-signup.compo
 import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
 import { EmployeeHomeComponent } from './employee-home/employee-home.component';
 import { EmployerHomeComponent } from './employer-home/employer-home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EmployerHomeComponent } from './employer-home/employer-home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
